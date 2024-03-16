@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<!-- Add Bootstrap CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+       <div class="row">
+           <div class="col-md-6 offset-md-3 mt-5">
+          
+               <form action="CreateTableServlet" method="post">
+                   <div class="form-group">
+                       <label>Enter Table Name</label>
+                       <input type="text" name="table" class="form-control" placeholder="Table Name">
+                   </div>
+                   <div class="table-responsive">
+                       <table class="table table-bordered">
+                           <thead>
+                               <tr>
+                                   <th>Column Name</th>
+                                   <th>Data Type</th>
+                                   <th>Length</th>
+                                   <th>Default</th>
+                               </tr>
+                           </thead>
+                           <tbody>
+                               <tr>
+                                   <td><input type="text" name="name" class="form-control" placeholder="Column Name"></td>
+                                   <td>
+                                       <select name="datatype" class="form-control">
+                                           <option value="int">int</option>
+                                           <option value="varchar">varchar</option>
+                                           <option value="double">double</option>
+                                           <option value="char">char</option>
+                                       </select>
+                                   </td>
+                                   <td><input type="number" name="len" class="form-control" placeholder="Length"></td>
+                                   <td><input type="text" name="default" class="form-control" placeholder="Default"></td>
+                               </tr>
+                               <tr>
+                                   <td><input type="text" name="name" class="form-control" placeholder="Column Name"></td>
+                                   <td>
+                                       <select name="datatype" class="form-control">
+                                           <option value="int">int</option>
+                                           <option value="varchar">varchar</option>
+                                           <option value="double">double</option>
+                                           <option value="char">char</option>
+                                       </select>
+                                   </td>
+                                   <td><input type="number" name="len" class="form-control" placeholder="Length"></td>
+                                   <td><input type="text" name="default" class="form-control" placeholder="Default"></td>
+                               </tr>
+                               <tr>
+                                   <td><input type="text" name="name" class="form-control" placeholder="Column Name"></td>
+                                   <td>
+                                       <select name="datatype" class="form-control">
+                                           <option value="int">int</option>
+                                           <option value="varchar">varchar</option>
+                                           <option value="double">double</option>
+                                           <option value="char">char</option>
+                                       </select>
+                                   </td>
+                                   <td><input type="number" name="len" class="form-control" placeholder="Length"></td>
+                                   <td><input type="text" name="default" class="form-control" placeholder="Default"></td>
+                               </tr>
+                               <tr>
+                                   <td><input type="text" name="name" class="form-control" placeholder="Column Name"></td>
+                                   <td>
+                                       <select name="datatype" class="form-control">
+                                           <option value="int">int</option>
+                                           <option value="varchar">varchar</option>
+                                           <option value="double">double</option>
+                                           <option value="char">char</option>
+                                       </select>
+                                   </td>
+                                   <td><input type="number" name="len" class="form-control" placeholder="Length"></td>
+                                   <td><input type="text" name="default" class="form-control" placeholder="Default"></td>
+                               </tr>
+                               <tr>
+                                   <td><input type="text" name="name" class="form-control" placeholder="Column Name"></td>
+                                   <td>
+                                       <select name="datatype" class="form-control">
+                                           <option value="int">int</option>
+                                           <option value="varchar">varchar</option>
+                                           <option value="double">double</option>
+                                           <option value="char">char</option>
+                                       </select>
+                                   </td>
+                                   <td><input type="number" name="len" class="form-control" placeholder="Length"></td>
+                                   <td><input type="text" name="default" class="form-control" placeholder="Default"></td>
+                               </tr>
+                           </tbody>
+                       </table>
+                   </div>
+                   <button type="submit" class="btn btn-primary">Create Table</button>
+               </form>
+               <a href="ShowTablesServlet" class="btn btn-success">Show Table</a>
+           </div>
+       </div>
+   </div>
+
+<!-- Bootstrap JS (optional, if you need JS functionality from Bootstrap) -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>47
